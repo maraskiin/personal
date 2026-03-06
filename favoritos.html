@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href= "img/cico.jpg" type="/open-iconc/svg/favicon.png">
+	<title>lililulamoon</title>
+	<link rel="stylesheet" type="text/css" href="css/estilofav.css">
+</head>
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const slides = document.querySelector('.slides');
+				if (!slides) return;
+					let index = 0;
+					const totalSlides = document.querySelectorAll('.slide').length;
+			setInterval(() => {
+					index = (index + 1) % totalSlides;
+					slides.style.transform = `translateX(-${index * 100 }%)`;
+			}, 3000);
+		});
+	</script>
+<header>
+	<section class="slider">
+		<div class="slides">
+			<div class="slide active">
+				<img src="img/banner1.jpg" alt="Slide 1">
+			</div>
+			<div class="slide">
+				<img src="img/banner2.jpg" alt="Slide 2">
+			</div>
+			<div class="slide">
+				<img src="img/banner3.jpg" alt="Slide 3">
+			</div>
+		</div>
+	</section>
+	<h1>Lililulamoon</h1>
+<div class="menu-icon" onclick="toggleMenu()">&#9776;
+
+</div>
+	
+<nav id="navMenu">
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="biografia.html">Sobre mí</a></li>
+		<li><a href="favoritos.html">Favoritos</a></li>
+		<li><a href="galeria.html">Galeria</a></li></ul>
+	</nav>
+</header>
+<center><h1>Mis Favoritos</h1></center>
+<div class="gif-container">
+	<center><img src="img/gif9.gif" width="150" alt="gif izquierda">
+	<img src="img/gif6.gif" width="300" alt="gif centro">
+	<img src="img/gif9.gif" width="150" alt="gif derecha"></center>
+</div>
+<div class="container">
+		<section id="favoritos" class="main-contet">
+			<h2>Mis favoritos</h2>
+			<div class="sidebar">
+			<p>Una de las cosas que mas me guta es escuchar música, algunos de mis grupos favoritos son Straykids, NexZ, NiziU, Twice y Maneskin, entre los generos musicales que más me gustan gana el k-pop, pero también escucho otros como rock en español o rap</p>
+			<br>
+			<p>Mi serie favorita es My little pony, lo veo desde pequeña y siento que es algo muy importante para mi y algo que me caracteria mucho, mis peliculas favoritas son las de mlp y equestria girls, aunque también me considero muy fan de las peliculas de decendientes.</p>
+			<br>
+			<p>Me encantan los gatos, soy muy bonitos y curiosos, pieno que algún día van a dominar el mundo.</p>
+			<br>
+			<p>Mi deporte disciplinario favorito es la escolta, es algo en lo que estoy desde los 13 años y desde entonces se volvio algo que aprecio con todo mi ser.</p>
+			<br>
+			<p>La verdad es que no hago mucho en mis tiempos libres porque casi no tengo, pero cuando puedo lo que hago es jugar roblox o aprenerme alguna coreografía de kpop.</p>
+			</div>
+			<br>
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9J62hGda9BQ?si=cJP5aexITOvYSFXZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</section>
+
+	<div class="sidebar">
+			<h2>˚ 𝜗𝜚˚⋆｡ ☆</h2>
+			<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5XqpwgdLAeI00ZHtCgHVwF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<center><img src="img/gif7.gif" width="200"></center>
+			
+		</div>
+	</nav>
+	<footer>
+		<p>Derechos de autor &copy; 2026 - Maraskiin</p>
+	</footer>
+<script>
+		function toggleMenu() {
+			const navMenu = document.getElementById("navMenu");
+			navMenu.classList.toggle("responsive");
+		}
+	</script>
+</body>
+</html>

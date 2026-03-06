@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href= "img/cico.jpg" type="/open-iconc/svg/favicon.png">
+	<title>lililulamoon</title>
+	<link rel="stylesheet" type="text/css" href="css/estilofav.css">
+</head>
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const slides = document.querySelector('.slides');
+				if (!slides) return;
+					let index = 0;
+					const totalSlides = document.querySelectorAll('.slide').length;
+			setInterval(() => {
+					index = (index + 1) % totalSlides;
+					slides.style.transform = `translateX(-${index * 100 }%)`;
+			}, 3000);
+		});
+	</script>
+<header>
+	<section class="slider">
+		<div class="slides">
+			<div class="slide active">
+				<img src="img/banner1.jpg" alt="Slide 1">
+			</div>
+			<div class="slide">
+				<img src="img/banner2.jpg" alt="Slide 2">
+			</div>
+			<div class="slide">
+				<img src="img/banner3.jpg" alt="Slide 3">
+			</div>
+		</div>
+	</section>
+	<h1>Lililulamoon</h1>
+<div class="menu-icon" onclick="toggleMenu()">&#9776;
+
+</div>
+	
+<nav id="navMenu">
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="biografia.html">Sobre mí</a></li>
+		<li><a href="favoritos.html">Favoritos</a></li>
+		<li><a href="galeria.html">Galeria</a></li></ul>
+	</nav>
+</header>
+
+<center><h1>Galeria</h1></center>
+<section id="galeria" class="main-contet">
+	<div class="sidebar">
+<center><img src="img2/foto1.jpeg" width="400">
+<img src="img2/foto2.jpg" width="400">
+<img src="img2/foto3.jpg" width="400">
+<img src="img2/foto4.jpeg" width="400">
+<img src="img2/foto5.jpeg" width="400">
+<img src="img2/foto6.jpg" width="400">
+<img src="img2/foto7.jpg" width="400">
+<img src="img2/foto8.jpg" width="400">
+<img src="img2/foto9.jpeg" width="400">
+<img src="img2/foto10.jpeg" width="400">
+<img src="img2/foto11.jpeg" width="400">
+<img src="img2/foto12.jpeg" width="400">
+<img src="img2/foto13.jpeg" width="400">
+<img src="img2/foto14.jpeg" width="400">
+<img src="img2/foto15.jpeg" width="400"></center>
+</div>
+</section>
+	<footer>
+		<p>Derechos de autor &copy; 2026 - Maraskiin</p>
+	</footer>
+<script>
+		function toggleMenu() {
+			const navMenu = document.getElementById("navMenu");
+			navMenu.classList.toggle("responsive");
+		}
+	</script>
+</body>
+</html>
