@@ -1,100 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href= "img/cico.jpg" type="/open-iconc/svg/favicon.png">
-	<title>lililulamoon</title>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-</head>
-<body>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			const slides = document.querySelector('.slides');
-				if (!slides) return;
-					let index = 0;
-					const totalSlides = document.querySelectorAll('.slide').length;
-			setInterval(() => {
-					index = (index + 1) % totalSlides;
-					slides.style.transform = `translateX(-${index * 100 }%)`;
-			}, 3000);
-		});
-	</script>
-<header>
-	<section class="slider">
-		<div class="slides">
-			<div class="slide active">
-				<img src="img/banner1.jpg" alt="Slide 1">
-			</div>
-			<div class="slide">
-				<img src="img/banner2.jpg" alt="Slide 2">
-			</div>
-			<div class="slide">
-				<img src="img/banner3.jpg" alt="Slide 3">
-			</div>
-		</div>
-	</section>
-	<h1>Lililulamoon</h1>
-<div class="menu-icon" onclick="toggleMenu()">&#9776;
-	<script>
-	document.querySelectorAll("nav > ul > li > a").forEach(item => {
-		item.addEventListener("click", function (e) {
-			const parent = this.parentElement;
-			const submenu = parent.querySelector("ul");
-
-			if (submenu) {
-				e.preventDefault();
-				parent.classList.toggle("active");
-			}
-		});
-	});
-</script>
-</div>
-<nav id="navMenu">
-	<ul>
-		<li><a href="index.html">Inicio</a></li>
-		<li><a href="biografia.html">Sobre mí</a></li>
-		<li><a href="favoritos.html">Favoritos</a></li>
-		<li><a href="galeria.html">Galeria</a></li>
-	</ul>
-	
-    <div class="gif-container">
-	<center><img src="img/gif8.gif" width="150" alt="gif izquierda">
-	<img src="img/gif8.gif" width="300" alt="gif centro">
-	<img src="img/gif8.gif" width="150" alt="gif derecha"></center>
-</div>
-	<section id="inicio" class="main-contet">
-		<div class="sidebar">
-			<h2>Hola, Soy Oliany</h2>
-			<p>Esta página es para que puedas conocerme un poco mejor, aqui hay datos sobre mí.</p>
-		</div>
-		</section>
-<br>
 <script>
-		function toggleMenu() {
-			const navMenu = document.getElementById("navMenu");
-			navMenu.classList.toggle("responsive");
-		}
+		window.onload=function(){
+		alert("Bienvenido a esta pagina");
+	}
 	</script>
-	<section id="contacto" class="main-contet">
-		<div class="sidebar">
-			<h2>Contacto</h2>
-			<center><ul class="contacto">
-				<li><a href="ucanoliany@gmail.com">Correo</a></li>
-				<li><a href="https://www.instagram.com/maraskiin" target="_blank">Instagram</a></li>
-				<li><a href="https://www.tiktok.com/@maraskiin" target="_blank">TikTok</a></li></ul></center>
-			</div>
-	</section>
-		</div>
-	<script>
-		function toggleMenu() {
-			const navMenu = document.getElementById("navMenu");
-			navMenu.classList.toggle("responsive");
-		}
-	</script>
-	<footer>
-		<p>Derechos de autor &copy; 2026 - Maraskiin</p>
-	</footer>
-	
+<title>Bienvenido</title>
+</head>
+<style>
+
+body{
+	margin:0;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:'Segoe UI', Tahoma, sans-serif;
+	background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+	color:white;
+}
+
+.inicio{
+	text-align:center;
+}
+
+.inicio h1{
+	font-size:40px;
+	margin-bottom:30px;
+	color:#ffd6ff;
+}
+
+.boton{
+	padding:15px 35px;
+	font-size:18px;
+	background:#ffb3c6;
+	color:black;
+	border:none;
+	border-radius:12px;
+	cursor:pointer;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.boton:hover{
+	transform:scale(1.05);
+	box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+</style>
+
+<body>
+
+<div class="inicio">
+
+<h1>Bienvenido a mi página personal</h1>
+
+<a href="inicio.html">
+<button class="boton">
+Conoceme
+</button>
+</a>
+
+</div>
+
 </body>
 </html>
